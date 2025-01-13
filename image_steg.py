@@ -16,12 +16,12 @@ if __name__ == "__main__":
 
     if choice == "1":
         try:
-            encode_message(input("Input image path: "), input("Message to encode: "), input("Output image path: "), key)
+            encode(input("Input image path: "), input("Message to encode: "), input("Output image path: "), key)
         except Exception as e:
             print(f"Error: {e}")
     elif choice == "2":
         try:
-            decoded_message = decode_message(input("Encoded image path: "), key)
+            decoded_message = decode(input("Encoded image path: "), key)
             print(f"Decoded message: {decoded_message}")
         except Exception as e:
             print(f"Error: {e}")
